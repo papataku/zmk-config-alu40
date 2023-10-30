@@ -114,6 +114,21 @@
 #define J_GRAV      &J_GRA_     // `
 #define J_TILD      &J_TIL_     // ~
 
+// RGB setting
+#define D_RGB_ON    &rgb_ug RGB_ON
+#define D_RGB_HUI   &rgb_ug RGB_HUI
+#define D_RGB_SAI   &rgb_ug RGB_SAI
+#define D_RGB_BRI   &rgb_ug RGB_BRI
+#define D_RGB_SPI   &rgb_ug RGB_SPI
+#define D_RGB_EFF   &rgb_ug RGB_EFF
+#define D_RGB_OFF   &rgb_ug RGB_OFF
+#define D_RGB_HUD   &rgb_ug RGB_HUD
+#define D_RGB_SAD   &rgb_ug RGB_SAD
+#define D_RGB_BRD   &rgb_ug RGB_BRD
+#define D_RGB_SPD   &rgb_ug RGB_SPD
+#define D_RGB_EFR   &rgb_ug RGB_EFR
+
+
 &lt {  // layer-tap config
     flavor = "hold-preferred";
     tapping-term-ms = <20>;
@@ -288,8 +303,8 @@
 			// |          |          |          |          |          |          |          |          |          |          |          |          |
 			bindings = <
 				&trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp DEL
-				&trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp PG_UP  &kp PG_DN  &trans     &trans
-				&trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp HOME   &kp END    &trans     &trans
+				D_RGB_ON   D_RGB_HUI  D_RGB_SAI  D_RGB_BRI  D_RGB_SPI  D_RGB_EFF  &trans     &trans     &kp PG_UP  &kp PG_DN  &trans     &trans
+				D_RGB_OFF  D_RGB_HUD  D_RGB_SAD  D_RGB_BRD  D_RGB_SPD  D_RGB_EFR  &trans     &trans     &kp HOME   &kp END    &trans     &trans
                 &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     XXXXXXXXXX &trans     &trans     &trans
 			>;
 
