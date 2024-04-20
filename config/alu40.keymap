@@ -149,6 +149,20 @@
         };
     };
     
+    combos {
+        compatible = "zmk,combos";
+        combo_ctrl_c {
+            timeout-ms = <50>;
+            key-positions = <36 27>;
+            layers = <USKEY>;
+            bindings = <&macro_press &kp LCMD>,          \
+                        <&macro_press &kp C>,         \
+                        <&macro_pause_for_release>,     \
+                        <&macro_release &kp C>,       \
+                        <&macro_release &kp LCMD>;        \
+        };
+    };
+
     macros {
         J_KEY_MACRO(J_EXCL_, N1)
         J_KEY_MACRO(J_HASH_, N3)
