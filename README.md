@@ -12,3 +12,10 @@
 ## Notes
 
 [`config/alu40.keymap`](config/alu40.keymap) contains [several reserved layers labeled `extra1-4`](https://zmk.dev/docs/features/studio#including-extra-layers) for use with [ZMK Studio](https://zmk.studio). If you intend to use [Keymap Editor](https://nickcoutsos.github.io/keymap-editor), these will need to be removed.
+
+## build
+
+```
+rm -rf .west config/.west config/zephyr && west init ./config && cd config && west update && west zephyr-export
+west build -s zmk/app -d build -b alu40
+```
