@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: hitsmaxft
+      url-base: https://github.com/hitsmaxft
   projects:
     - name: alu40-module
       url: https://github.com/polarityworks/zmk-config-alu40
@@ -11,5 +13,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-rgbled-widget
+      remote: hitsmaxft
+      revision: main
   self:
     path: config

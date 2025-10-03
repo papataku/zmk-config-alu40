@@ -23,7 +23,7 @@
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zmk,kscan = &kscan0;
-		zmk,underglow = &led_strip;
+		//zmk,underglow = &led_strip;
 		zmk,battery = &vbatt;
 		zmk,physical-layout = &layout_ortho_4x12_all1u;
 	};
@@ -222,4 +222,10 @@ zephyr_udc0: &usbd {
 
 &layout_ortho_4x12_2x2u {
     transform = <&layout_2x2u_transform>;
+};
+
+/ {
+    aliases {
+        status-ws2812 = &led_strip;
+    };
 };
