@@ -30,7 +30,7 @@
 	};
 
     aliases {
-        status-ws2812 = &ws2812_strip;
+        status_ws2812 = &ws2812_strip;
     };
 
 	sensors {
